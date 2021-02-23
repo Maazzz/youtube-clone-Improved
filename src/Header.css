@@ -1,0 +1,200 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px;
+    padding-left: 17px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+} 
+::placeholder {
+    padding-left: 10px;
+  }
+
+.logo{
+    height: 19px;
+    margin-left: 20px;
+}
+#left{
+    display: flex;
+    align-items: center;
+}
+
+#middle{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.search-button{
+    width: 50px !important;
+    color: gray;
+    margin-top: 3px;
+    margin-left: 7px;
+}
+.srch{
+    height: 34px;
+    width: 70px;
+}
+#middle > input{
+    flex: 1;
+    border: 1px solid lightgray;
+    height: 34px;
+ }
+
+#right{
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color:#606060;
+    cursor: pointer;
+}
+.srch .tooltip-text {
+    visibility: hidden;
+    background-color: #707070;
+    font-size: smaller;
+    color: #FDFDFD;
+    padding: 8px;
+    position: fixed;
+    top: 70px;
+    right: 35%;
+    opacity: 95%;
+}
+.srch:hover .tooltip-text {
+    visibility: visible;
+}
+.srch:hover{
+    background-color: #f0f0f0 ;
+}
+.search-button:hover{
+    color: black;
+}
+.mic .tooltip-text {
+    visibility: hidden;
+    background-color: #707070;
+    font-size: smaller;
+    color: #FDFDFD;
+    padding: 8px;
+    position: fixed;
+    top: 70px;
+    right: 28%;
+    opacity: 95%;
+}
+.mic:hover .tooltip-text {
+    visibility: visible;
+}
+
+.videocall-icon .tooltip-text {
+    visibility: hidden;
+    background-color: #707070;
+    font-size: smaller;
+    color: #FDFDFD;
+    padding: 8px;
+    position: fixed;
+    top: 70px;
+    right: 12%;
+    opacity: 95%;
+}
+.videocall-icon:hover .tooltip-text {
+    visibility: visible;
+}
+.apps-icon .tooltip-text {
+    visibility: hidden;
+    background-color: #707070;
+    font-size: smaller;
+    color: #FDFDFD;
+    padding: 8px;
+    position: fixed;
+    top: 70px;
+    right: 7%;
+    opacity: 95%;
+}
+.apps-icon:hover .tooltip-text {
+    visibility: visible;
+}
+.notification-icon .tooltip-text {
+    visibility: hidden;
+    background-color: #707070;
+    font-size: smaller;
+    color: #FDFDFD;
+    padding: 8px;
+    position: fixed;
+    top: 70px;
+    right: 4%;
+    opacity: 95%;
+}
+.notification-icon:hover .tooltip-text {
+    visibility: visible;
+}
+.menu-items{
+    width: 18%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    top: 75px;
+    left: 5px;
+    font-size: 15px;
+}
+.mitem{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mitem:hover{
+    background-color: lightgray;
+}
+.micon{
+    flex: 0.2;
+    position: fixed;
+    left: 15px;
+    color:#606060;
+}
+.mtext{
+    position: relative;
+    right: 25px;
+}
+.selectedtext{
+    font-weight: bold;
+    right: 32px;
+}
+.selectedicon{
+    color: red;
+}
+.subs{
+    right: 12px;
+}
+.home{
+    right: 33px;
+}
+.notf {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 55px;
+    right: 50px;
+    z-index: 1000;
+}
+.notf-text{
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+.notf-item{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+@media screen and (max-width: 1280px) {
+    #burger, .apps-icon, .videocall-icon, .tooltip-text, .notification-icon {
+      display: none;
+    }
+  }
+@media screen and (max-width: 480px) {
+    .logo, Avatar {
+      display: none;
+    }
+  }

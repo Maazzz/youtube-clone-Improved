@@ -1,0 +1,27 @@
+.notfic{
+    display: flex;
+}
+.notfic-items{
+}
+.notfic-icon{
+    margin-left: 5px;
+}
+.vid-image{
+    position: fixed;
+    right: 80px;
+    width: 110px;
+    height: 70px;
+    flex: 0.2;
+}
+.notfictext-title{
+    font-size: 15px;
+}
+.notfictext{
+    flex: 0.6;
+    position: fixed;
+    right: 200px;
+}
+.notfictext-time{
+    font-size: 15px;
+    color: gray;
+}

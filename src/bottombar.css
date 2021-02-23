@@ -1,0 +1,31 @@
+#bottombar {
+    align-items: center;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    background-color: white;
+    width: 100%;
+}
+.bt-item{
+    padding-inline: 55px;
+}
+
+p {
+    font-size:x-small;
+}
+.icons{
+    color: #606060 ;
+}
+.p-4{
+    width: 65px;
+    cursor: pointer;
+}
+.selected{
+    color: red;
+}
+@media screen and (min-width: 681px) {
+    #bottombar{
+     display: none;
+   }
+ }
